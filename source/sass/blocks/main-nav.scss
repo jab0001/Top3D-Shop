@@ -1,0 +1,29 @@
+.main-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 12px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding-top: 8px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .main-nav__wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav__wrapper {
+    display: none;
+  }
+}

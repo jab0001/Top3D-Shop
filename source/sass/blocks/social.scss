@@ -1,0 +1,19 @@
+.social {
+  padding: 0;
+  margin: 0;
+  width: 88px;
+
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.social__icon {
+  fill: $text-color;
+
+  &:hover,
+  &:focus {
+    fill: $first-color;
+  }
+}

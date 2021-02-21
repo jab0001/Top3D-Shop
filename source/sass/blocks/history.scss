@@ -1,0 +1,158 @@
+.history {
+  width: 100%;
+  margin-top: 71px;
+}
+
+.history__title {
+  font-family: $font-sfProText;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.9px;
+
+  color: $second-text-color;
+
+  margin: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 74.5%;
+    height: 1px;
+    right: 0;
+    top: 51%;
+
+    background: $grey-color;
+  }
+}
+
+.history__list {
+  padding: 0;
+  margin: 0;
+
+  margin-top: 49px;
+  max-width: 91.6%;
+
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.history__item:nth-last-child(1) {
+  margin-left: 26px;
+}
+
+.history__item {
+  position: relative;
+  padding-right: 20px;
+}
+
+.history__link {
+  display: block;
+  font-family: $font-sfProDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: $second-color;
+
+  border-bottom: 1px solid $second-color;
+
+  box-sizing: content-box;
+
+  &:hover,
+  &:focus {
+    color: $first-color;
+
+    border-bottom: 1px solid $first-color;
+
+    .history__icon {
+      fill: $first-color;
+    }
+  }
+}
+
+.history__icon {
+  position: absolute;
+  height: 20px;
+  top: 0;
+  right: 0;
+  transform: rotate(-90deg);
+
+  fill: $second-color;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .history__title::after {
+    width: 56.5%;
+  }
+
+  .history__list {
+    flex-wrap: wrap;
+  }
+
+  .history__item {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+
+    &:nth-last-child(1) {
+      margin: 0;
+    }
+  }
+
+  .history__link {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+  }
+
+  .history__icon {
+    right: -22px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .history__title {
+    font-size: 21px;
+    text-align: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .history__list {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .history__item {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+
+    &:nth-last-child(1) {
+      margin: 0;
+    }
+  }
+
+  .history__link {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+  }
+
+  .history__icon {
+    right: -22px;
+  }
+
+  .history__text {
+    display: none;
+  }
+}

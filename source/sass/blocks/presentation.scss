@@ -1,0 +1,162 @@
+.presentation {
+  margin-top: 70px;
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.presentation__container {
+  width: 42.4%;
+}
+
+.presentation__wrapper {
+  width: 57.6%;
+  margin-top: 26px;
+}
+
+.presentation__title {
+  font-family: $font-sfProDisplay;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 47px;
+  max-width: 333px;
+
+  color: $text-color;
+}
+
+.presentation__btn {
+  font-family: $font-sfProText;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.7px;
+
+  color: $white-color;
+
+  text-align: center;
+
+  display: block;
+
+  width: 280px;
+  height: 44px;
+
+  margin-top: 38px;
+  padding-top: 12px;
+
+  background: $first-color;
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.presentation__text {
+  font-family: $font-sfProText;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+  letter-spacing: -0.9px;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 19px;
+
+  color: $second-color;
+
+  &--red {
+    text-decoration: underline;
+    color: $first-color;
+  }
+}
+
+.presentation__description {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+
+  font-family: $font-sfProText;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.9px;
+
+  color: $grey-color;
+
+  max-width: 240px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .presentation__container {
+    width: 100%;
+  }
+
+  .presentation__title {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .presentation__btn {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .presentation__description {
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .presentation__wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .presentation__container {
+    width: 100%;
+  }
+
+  .presentation__title {
+    font-size: 23px;
+
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .presentation__btn {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .presentation__description {
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .presentation__wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .presentation__text {
+    font-size: 15px;
+  }
+}

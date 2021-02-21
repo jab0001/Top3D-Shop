@@ -1,0 +1,24 @@
+.page-header {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  background: linear-gradient($bg-yellow-color 0, $bg-yellow-color 32px, $white-color 32px, $white-color 100%);
+  box-shadow: 0 17px 21px rgba(0, 0, 0, 0.16);
+
+  padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .page-header {
+    background: $white-color;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    background: $white-color;
+  }
+}

@@ -1,0 +1,35 @@
+.info {
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 11px;
+
+  width: 99%;
+
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.info__link {
+  font-weight: 400;
+
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    color: $first-color;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .info {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .info {
+    display: none;
+  }
+}

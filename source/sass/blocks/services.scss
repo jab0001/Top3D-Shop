@@ -1,0 +1,51 @@
+.services {
+  padding: 0;
+  margin: 0;
+  margin-top: 43px;
+  margin-left: 4px;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.services__link {
+  position: relative;
+
+  font-weight: 700;
+  color: $text-color;
+
+  display: block;
+  padding-right: 22px;
+
+  &:hover,
+  &:focus {
+    color: $first-color;
+
+    .services__icon {
+      fill: $first-color;
+    }
+  }
+}
+
+.services__icon {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  fill: #bdbdbd;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .services {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services {
+    display: none;
+  }
+}

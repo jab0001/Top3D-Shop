@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Top 3D Shop</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/opensanssemibold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/SFProDisplay.woff" as="font" crossorigin="">
+  <link rel="preload" href="fonts/SFProText.woff" as="font" crossorigin="">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+  <div style="display:none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+<clipPath id="clip0">
+<rect width="16" height="16"></rect>
+</clipPath>
+</defs><symbol id="icon-arrow" viewBox="0 0 10 7">
+<path d="M8.57753 0.744141L5.00003 4.32164L1.42253 0.744141L0.244202 1.92247L5.00003 6.67831L9.75587 1.92247L8.57753 0.744141Z"></path>
+</symbol><symbol id="icon-cart" viewBox="0 0 24 24">
+<path d="M7.822 15.77C8.134 16.518 8.858 17 9.667 17H17.306C18.134 17 18.887 16.479 19.179 15.703L21.936 8.351C22.051 8.043 22.008 7.7 21.822 7.43C21.635 7.161 21.328 7 21 7H6.333L4.923 3.615C4.768 3.243 4.404 3 4 3H2V5H3.333L7.822 15.77ZM19.557 9L17.307 15H9.667L7.167 9H19.557Z"></path>
+<path d="M10.5 22C11.3284 22 12 21.3284 12 20.5C12 19.6716 11.3284 19 10.5 19C9.67157 19 9 19.6716 9 20.5C9 21.3284 9.67157 22 10.5 22Z"></path>
+<path d="M16.438 22C17.2664 22 17.938 21.3284 17.938 20.5C17.938 19.6716 17.2664 19 16.438 19C15.6096 19 14.938 19.6716 14.938 20.5C14.938 21.3284 15.6096 22 16.438 22Z"></path>
+</symbol><symbol id="icon-enter" viewBox="0 0 24 24">
+<path d="M13 16L18 12L13 8V11H4V13H13V16Z" fill="#D2001C"></path>
+<path d="M20 3H11C9.897 3 9 3.897 9 5V9H11V5H20V19H11V15H9V19C9 20.103 9.897 21 11 21H20C21.103 21 22 20.103 22 19V5C22 3.897 21.103 3 20 3Z" fill="#D2001C"></path>
+</symbol><symbol id="icon-menu" viewBox="0 0 16 12">
+<line fill="none" stroke="#D2001C" stroke-width="2" stroke-miterlimit="10" x1="0" y1="1" x2="16" y2="1"></line>
+<line fill="none" stroke="#D2001C" stroke-width="2" stroke-miterlimit="10" x1="0" y1="11" x2="16" y2="11"></line>
+<line fill="none" stroke="#D2001C" stroke-width="2" stroke-miterlimit="10" x1="0" y1="6" x2="16" y2="6"></line>
+</symbol><symbol id="icon-phone" viewBox="0 0 16 16">
+<g clip-path="url(#clip0)">
+<path d="M13.6866 6.71405C13.7059 4.45825 11.7846 2.39027 9.40381 2.10431C9.35646 2.0987 9.30488 2.09015 9.25027 2.08111C9.13241 2.06158 9.01052 2.0415 8.88754 2.0415C8.39959 2.0415 8.26916 2.38426 8.23482 2.58868C8.20143 2.78744 8.23328 2.95435 8.32933 3.08498C8.49092 3.30471 8.77524 3.34372 9.00361 3.37497C9.07055 3.38421 9.1337 3.39281 9.18657 3.40468C11.3256 3.88265 12.0459 4.6341 12.3979 6.75494C12.4064 6.80677 12.4103 6.87062 12.4144 6.93835C12.4298 7.19186 12.4618 7.71932 13.0289 7.71932H13.0289C13.0761 7.71932 13.1268 7.71524 13.1797 7.70719C13.7077 7.62694 13.6912 7.14481 13.6832 6.91316C13.681 6.84791 13.6788 6.7862 13.6844 6.74516C13.6859 6.73482 13.6866 6.72444 13.6866 6.71405Z"></path>
+<path d="M8.74907 1.27642C8.81243 1.28099 8.8724 1.28537 8.92234 1.29302C12.4348 1.83319 14.0502 3.49739 14.4979 7.03737C14.5055 7.09754 14.5066 7.17093 14.5079 7.24865C14.5124 7.52522 14.5216 8.10057 15.1394 8.1125L15.1586 8.1127C15.3524 8.1127 15.5066 8.05426 15.6168 7.93888C15.8092 7.73769 15.7957 7.43881 15.7849 7.19861C15.7823 7.13968 15.7797 7.08417 15.7804 7.03558C15.8251 3.41511 12.6911 0.132075 9.07389 0.00998758C9.05889 0.00949068 9.04458 0.0102857 9.03012 0.012323C9.02301 0.0133665 9.00984 0.0146584 8.98728 0.0146584C8.95121 0.0146584 8.90684 0.0115279 8.85978 0.00834783C8.80289 0.00447205 8.73839 0 8.673 0C8.09695 0 7.98743 0.409441 7.97342 0.653516C7.94112 1.21759 8.48681 1.25729 8.74907 1.27642Z"></path>
+<path d="M14.3285 11.6127C14.2538 11.5556 14.1766 11.4966 14.1043 11.4384C13.7208 11.1297 13.3128 10.8453 12.9182 10.5701C12.8364 10.5131 12.7545 10.456 12.6729 10.3988C12.1674 10.0437 11.713 9.8712 11.2837 9.8712C10.7055 9.8712 10.2013 10.1907 9.78523 10.8207C9.60088 11.1 9.37723 11.2358 9.1016 11.2358C8.93862 11.2358 8.75342 11.1893 8.55124 11.0975C6.91979 10.3577 5.75482 9.2234 5.08863 7.72611C4.76659 7.00243 4.87099 6.52939 5.43775 6.14439C5.75959 5.92596 6.35864 5.5193 6.31621 4.74057C6.26816 3.85624 4.31695 1.19542 3.49484 0.893213C3.14677 0.765213 2.78105 0.76402 2.4059 0.890232C1.4608 1.20795 0.782593 1.76591 0.444407 2.5037C0.117599 3.21659 0.132357 4.05366 0.48709 4.92442C1.51258 7.44198 2.95437 9.63696 4.77256 11.4483C6.55223 13.2214 8.73961 14.6738 11.2739 15.7651C11.5023 15.8633 11.7419 15.917 11.9169 15.9561C11.9765 15.9695 12.028 15.9809 12.0655 15.9912C12.0861 15.9968 12.1074 15.9998 12.1287 16L12.1487 16.0001C12.1488 16.0001 12.1487 16.0001 12.1488 16.0001C13.3408 16.0001 14.772 14.911 15.2115 13.6692C15.5966 12.5819 14.8935 12.0445 14.3285 11.6127Z"></path>
+<path d="M9.27653 4.15229C9.07245 4.15746 8.64776 4.16799 8.49874 4.60054C8.42902 4.80268 8.43737 4.97818 8.52358 5.12218C8.65009 5.33346 8.89248 5.39821 9.11295 5.43373C9.9125 5.56203 10.3231 6.00417 10.4053 6.82504C10.4434 7.2078 10.7012 7.47508 11.0321 7.47508H11.0322C11.0566 7.47508 11.0816 7.47364 11.1065 7.47061C11.5045 7.42325 11.6974 7.13083 11.68 6.60154C11.6864 6.04914 11.3973 5.42201 10.9056 4.92248C10.4122 4.42141 9.8175 4.13922 9.27653 4.15229Z"></path>
+</g>
+
+</symbol><symbol id="icon-plane" viewBox="0 0 16 14">
+<path d="M0.282729 6.71437L3.96945 8.09037L5.39644 12.6795C5.48774 12.9735 5.84716 13.0821 6.08572 12.8871L8.14076 11.2118C8.35617 11.0362 8.663 11.0275 8.88812 11.1909L12.5947 13.8819C12.8499 14.0674 13.2114 13.9276 13.2754 13.6192L15.9907 0.558373C16.0605 0.221519 15.7296 -0.059494 15.4088 0.0645593L0.278409 5.90141C-0.0949774 6.04541 -0.0917241 6.57405 0.282729 6.71437ZM5.16646 7.35789L12.3717 2.92019C12.5012 2.84067 12.6344 3.01576 12.5232 3.11891L6.57681 8.64637C6.3678 8.84093 6.23297 9.10131 6.19478 9.38392L5.99222 10.885C5.9654 11.0855 5.68385 11.1054 5.62854 10.9114L4.8495 8.17405C4.76028 7.86184 4.8903 7.52835 5.16646 7.35789Z"></path>
+</symbol><symbol id="icon-search" viewBox="0 0 17 17">
+<circle fill="none" stroke="#DF1F26" stroke-width="1.5" stroke-miterlimit="10" cx="7" cy="7" r="6"></circle>
+<line fill="none" stroke="#DF1F26" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="11.638" y1="11.638" x2="16.188" y2="16.188"></line>
+</symbol><symbol id="icon-skype" viewBox="0 0 18 14">
+<path d="M17.3638 8.48624C17.4918 8.03101 17.5599 7.55846 17.5599 7.0735C17.5599 3.43737 13.7699 0.48958 9.09472 0.48958C8.60116 0.48958 8.11756 0.52276 7.64704 0.5859C6.8905 0.21518 5.99542 0 5.0353 0C2.32402 0 0.12616 1.70963 0.12616 3.81808C0.12616 4.52293 0.3727 5.18261 0.80092 5.74938C0.68866 6.17713 0.62968 6.61985 0.62968 7.07345C0.62968 10.7096 4.41958 13.6574 9.09472 13.6574C9.62428 13.6574 10.1423 13.6192 10.6448 13.5469C11.3358 13.8358 12.126 14 12.9654 14C15.6768 14 17.8745 12.2906 17.8745 10.1819C17.8745 9.57259 17.6901 8.99719 17.3638 8.48624ZM13.4363 10.2199C13.0446 10.6509 12.4661 10.9925 11.7164 11.2349C10.974 11.4749 10.0841 11.5966 9.07114 11.5966C7.8553 11.5966 6.83596 11.4303 6.04036 11.102C5.47162 10.863 5.0026 10.5394 4.64662 10.1401C4.28704 9.73663 4.10464 9.33632 4.10464 8.95034C4.10464 8.70907 4.22344 8.49991 4.4578 8.32874C4.6897 8.15906 4.98688 8.0731 5.34124 8.0731C5.63212 8.0731 5.88298 8.14105 6.08698 8.27507C6.2818 8.4035 6.44902 8.59353 6.58336 8.83895C6.73336 9.10616 6.89692 9.33179 7.06966 9.5095C7.23568 9.68044 7.47454 9.82413 7.77958 9.93627C8.08648 10.0493 8.50018 10.1066 9.00904 10.1066C9.70882 10.1066 10.2826 9.99035 10.7142 9.76113C11.1357 9.53727 11.3406 9.26856 11.3406 8.93961C11.3406 8.67967 11.2337 8.47541 11.0137 8.31511C10.7833 8.14753 10.4795 8.0171 10.1104 7.92764C9.72568 7.83435 9.20338 7.73374 8.55736 7.62855C7.6822 7.48277 6.93826 7.30982 6.34576 7.11433C6.34348 7.11363 6.34114 7.11289 6.33886 7.11209C5.73184 6.91129 5.2426 6.63283 4.8847 6.28441C4.52116 5.93059 4.33696 5.48669 4.33696 4.96491C4.33696 4.46754 4.53034 4.01921 4.91176 3.63249C5.2903 3.24847 5.84314 2.95003 6.55486 2.74526C7.2574 2.54319 8.09308 2.44081 9.03862 2.44081C9.79462 2.44081 10.4593 2.50871 11.0141 2.64287C11.572 2.77802 12.0424 2.96053 12.412 3.18509C12.7843 3.41133 13.0612 3.65339 13.2351 3.90479C13.4108 4.1587 13.4999 4.4114 13.4999 4.65584C13.4999 4.89109 13.383 5.10487 13.1526 5.29121C12.9209 5.47862 12.6284 5.57377 12.2832 5.57377C11.9697 5.57377 11.7244 5.51427 11.5541 5.39695C11.3957 5.28803 11.2314 5.11821 11.0489 4.87387C10.8378 4.56195 10.5824 4.31606 10.2893 4.14279C10.0049 3.97451 9.52936 3.88906 8.87602 3.88906C8.26924 3.88906 7.77574 3.98379 7.40932 4.17065C7.05622 4.35069 6.88468 4.55714 6.88468 4.80172C6.88468 4.95175 6.93988 5.0771 7.05346 5.18499C7.17376 5.29928 7.34344 5.39966 7.55794 5.4831C7.78042 5.57009 8.00968 5.6392 8.23936 5.68853C8.47462 5.7393 8.86936 5.81453 9.41068 5.91178C9.98104 6.00703 10.5122 6.11193 10.9958 6.22421C11.0929 6.24675 11.1889 6.26957 11.282 6.29272C11.8457 6.43305 12.3329 6.60613 12.7301 6.80708C13.1356 7.01246 13.4567 7.27622 13.6845 7.59108C13.9129 7.90706 14.0286 8.29724 14.0286 8.75047C14.0285 9.29297 13.8292 9.78726 13.4363 10.2199Z"></path>
+</symbol></svg>
+  </div>
+
+  <header class="page-header">
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <div class="contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--arrow" href="#">
+                Санкт-Петербург
+                <svg class="contacts__icon" width="10" height="7">
+                  <use xlink:href="#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="#">
+                +7 (812) 613-58-38
+              </a>
+            </li>
+            <li class="contacts__item">
+              Пн–пт 10:00–19:00, сб-вс 10:00–17:00
+            </li>
+          </ul>
+          <div class="contacts__wrapper">
+            <a class="contacts__link" href="#">
+              Напишите нам
+            </a>
+            <a class="contacts__link" href="#">
+              Свяжитесь с директором
+            </a>
+          </div>
+        </div>
+        <ul class="social social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="16" height="14">
+                <use xlink:href="#icon-plane"></use>
+              </svg>
+              <span class="visually-hidden">
+                Telegramm
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="18" height="14">
+                <use xlink:href="#icon-skype"></use>
+              </svg>
+              <span class="visually-hidden">
+                Skype
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="15" height="15">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+              <span class="visually-hidden">
+                Phone
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation">
+        <button class="navigation__btn-mobile" type="button"></button>
+        <a class="navigation__logo" href="#">
+          <img src="img/logo.svg" width="215" height="73" alt="Top 3D Shop">
+        </a>
+        <a class="navigation__info" href="#">
+          <picture>
+            <source srcset="img/ya-market1x.webp 1x, img/ya-market2x.webp 2x" type="image/webp">
+            <img src="img/ya-market1x.png" width="81" height="50" alt="Yandex Metrik">
+          </picture>
+        </a>
+        <form class="navigation__form" action="#" method="post">
+          <input class="navigation__search" type="search" placeholder="Введите запрос, например, Formlabs Form 2">
+          <button class="navigation__search-btn" type="submit">Найти</button>
+        </form>
+        <a class="navigation__enter" href="#">
+          <svg class="navigation__icon navigation__icon-enter" width="24" height="24">
+            <use xlink:href="#icon-enter"></use>
+          </svg>
+          <span>Войти</span>
+        </a>
+        <a class="navigation__btn" href="#">
+          <svg class="navigation__icon navigation__icon-cart" width="24" height="24">
+            <use xlink:href="#icon-cart"></use>
+          </svg>
+          Корзина пуста
+        </a>
+        <a class="navigation__search-mobile" href="#">
+          <svg class="navigation__icon navigation__icon-mobile" width="20" height="20">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+        </a>
+      </div>
+      <ul class="info info__list">
+        <li class="info__item">
+          <a class="info__link" href="#">
+            Акции
+          </a>
+        </li>
+        <li class="info__item">
+          <a class="info__link" href="#">
+            О нас
+          </a>
+        </li>
+        <li class="info__item">
+          <a class="info__link" href="#">
+            Мероприятия
+          </a>
+        </li>
+        <li class="info__item">
+          <a class="info__link" href="#">
+            Оплата и доставка
+          </a>
+        </li>
+        <li class="info__item">
+          <a class="info__link" href="#">
+            Что с моим заказом?
+          </a>
+        </li>
+        <li class="info__item">
+          <a class="info__link" href="#">
+            Гос. закупки
+          </a>
+        </li>
+        <li class="info__item">
+          <a class="info__link" href="#">
+            Блог
+          </a>
+        </li>
+        <li class="info__item">
+          <a class="info__link" href="#">
+            Мастер-классы
+          </a>
+        </li>
+        <li class="info__item">
+          <a class="info__link" href="#">
+            Контакты
+          </a>
+        </li>
+      </ul>
+      <ul class="services services__list">
+        <li class="services__item">
+          <a class="services__link" href="#">
+            3D-принтеры
+            <svg class="services__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            3D-сканеры
+            <svg class="services__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            Станки
+            <svg class="services__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            Роботы
+            <svg class="services__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            Образование
+            <svg class="services__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            Стоматологам
+            <svg class="services__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            Гаджеты
+            <svg class="services__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            Материалы
+            <svg class="services__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            ПО
+            <svg class="services__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            Решения
+            <svg class="services__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            Учебный центр
+            <svg class="services__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            Услуги
+            <svg class="services__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Top 3D Shop, Магазин 3D-Техники</h1>
+    <section class="presentation">
+      <a class="presentation__picture">
+        <picture>
+          <source srcset="img/top-team1x.webp 1x, img/top-team2x.webp 2x" type="image/webp">
+          <img src="img/top-team1x.png" width="1230" height="431" alt="Top 3D Shop Team">
+        </picture>
+      </a>
+      <div class="presentation__container">
+        <h2 class="presentation__title">Твоя работа
+          в&nbsp;крупнейшем&nbsp;интеграторе
+          цифрового производства
+        </h2>
+        <a class="presentation__btn" href="#">
+          Отправить резюме
+        </a>
+        <p class="presentation__description">
+          Нажимая кнопку, вы соглашаетесь
+          на обработку персональных данных.
+        </p>
+      </div>
+      <div class="presentation__wrapper">
+        <p class="presentation__text">
+          Top 3D Shop – лидер по продажам 3D-оборудования в России и странах СНГ. В 2018 мы стали лучшим интегратором 3D
+          оборудования по аддитивным технологиям и цифровому производству по версии <span class="presentation__text presentation__text--red">3D Print Awards</span>.
+        </p>
+        <p class="presentation__text">
+          За 6 лет работы более 10 000 клиентов по всей России и СНГ выбрали Top 3D Shop. В 2018 наш оборот составил 600
+          млн. рублей, в компании работает более 100 сотрудников.
+        </p>
+        <p class="presentation__text">
+          Новая цель: 1 млрд торгового оборота в этом году и выход на международные рынки. Если вы — целеустремленный
+          специалист, готовый учиться новым навыкам и учить других, мыслите не просто как исполнитель, а как владелец
+          своего направления, то нам по пути!
+        </p>
+      </div>
+    </section>
+    <section class="history">
+      <h2 class="history__title">Лучше один раз увидеть:</h2>
+      <ul class="history__list">
+        <li class="history__item">
+          <a class="history__link" href="#">
+            Как устроена наша компания изнутри
+            <svg class="history__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="history__item">
+          <a class="history__link" href="#">
+            Как создавалась компания <span class="history__text">- необычная история</span>
+            <svg class="history__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="history__item">
+          <a class="history__link" href="#">
+            Читай о нас на 3D Today
+            <svg class="history__icon" width="10" height="7">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="about-us">
+      <div id="slider" class="slider">
+        <h2 class="slider__title">Видео о нас</h2>
+        <div class="slider__content">
+          <div class="slider__content-wrapper">
+            <div class="slider__content-item">
+              <video class="slider__content-video" width="551" height="307" controls="controls" poster="img/blog.png">
+              </video>
+              <video class="slider__content-video" width="551" height="307" controls="controls" poster="img/results.png"></video>
+            </div>
+            <div class="slider__content-item">
+              <video class="slider__content-video" width="551" height="307" controls="controls" poster="img/results.png"></video>
+              <video class="slider__content-video" width="551" height="307" controls="controls" poster="img/blog.png"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/pickturefill.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

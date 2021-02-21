@@ -1,0 +1,56 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+
+  width: 89.5%;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  min-width: 48%;
+
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.contacts__link {
+  font-family: $font-openSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    color: $first-color;
+
+    .contacts__icon {
+      fill: $first-color;
+    }
+  }
+}
+
+.contacts__link--arrow {
+  display: block;
+  position: relative;
+
+  width: 133px;
+}
+
+.contacts__icon {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  fill: $text-color;
+}
+
+.contacts__wrapper {
+  min-width: 28%;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,144 @@
+.slider__title {
+  font-family: $font-sfProDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: $second-text-color;
+
+  margin: 0;
+  margin-left: 30px;
+  margin-bottom: 65px;
+}
+
+.slider__content-video {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__content {
+  position: relative;
+  width: 100%;
+}
+
+.slider__content-wrapper {
+  display: flex;
+  height: 300px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider__content-item {
+  flex: 1 0 100%;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__controls {
+  padding: 20px;
+  text-align: center;
+}
+
+.slider__content-controls {
+  position: absolute;
+  top: -105px;
+  right: 30px;
+  width: 80px;
+  height: 38px;
+  z-index: 1;
+  border: 1px solid #e5e5e5e5;
+  border-radius: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #e5e5e5e5;
+    top: 0;
+    right: 50%;
+  }
+}
+
+.prev-arrow,
+.next-arrow {
+  position: absolute;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: $second-color;
+  width: 12px;
+  transition: all 0.3s;
+  top: 21px;
+}
+
+.prev-arrow {
+  left: 11px;
+}
+
+.next-arrow {
+  right: 15px;
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+  cursor: pointer;
+  color: $first-color;
+}
+
+.d-none {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+
+.active {
+  opacity: 1;
+}
+
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .slider__content-video:nth-last-child(1) {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .slider__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .slider__content-controls {
+    right: 30px;
+    top: -53px;
+  }
+
+  .slider__content-video {
+    max-width: 100%;
+
+    &:nth-last-child(1) {
+      display: none;
+    }
+  }
+}
